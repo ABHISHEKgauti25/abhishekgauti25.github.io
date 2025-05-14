@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhishek Gautam | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="profile.jpg" alt="Abhishek Gautam" class="profile-img">
+      <h1>Abhishek Gautam</h1>
+      <p>Final-year B.Tech student | Backend & AI Enthusiast</p>
+      <div class="links">
+        <a href="https://github.com/ABHISHEKgauti25" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/abhishek-gautam25/" target="_blank">LinkedIn</a>
+      </div>
+      <label class="switch">
+        <input type="checkbox" id="theme-toggle">
+        <span class="slider round"></span>
+      </label>
+    </div>
+  </header>
+
+  <section class="about container">
+    <h2>About Me</h2>
+    <p>I’m a final-year student at IIT Guwahati passionate about building intelligent backend systems that solve real-world problems. My interests lie at the intersection of backend engineering and applied AI.</p>
+  </section>
+
+  <section class="projects container">
+    <h2>Projects</h2>
+    <ul>
+      <li>GitHub Portfolio Projects auto-linked below</li>
+    </ul>
+  </section>
+
+  <section class="contact container">
+    <h2>Contact</h2>
+    <p>Let's connect! I'm open to opportunities and collaborations.</p>
+  </section>
+
+  <footer class="container">
+    <p>&copy; 2025 Abhishek Gautam</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('theme-toggle');
+    toggle.addEventListener('change', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+</body>
+</html>
