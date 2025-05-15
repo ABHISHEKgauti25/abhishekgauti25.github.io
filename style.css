@@ -200,7 +200,7 @@ footer {
 .intro-content {
   display: flex;
   align-items: flex-start;
-  gap: 2em;
+  gap: 0em;
 }
 
 .intro-left {
@@ -216,8 +216,8 @@ footer {
 }
 
 .intro-right img {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   border-radius: 10px;
   object-fit: cover;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
