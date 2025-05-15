@@ -216,9 +216,9 @@ footer {
 }
 
 .intro-right img {
-  width: 300px;
-  height: 300px;
-  border-radius: 10px;
+  width: 350px;
+  height: 350px;
+  border-radius: 5px;
   object-fit: cover;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
