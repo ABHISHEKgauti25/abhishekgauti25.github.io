@@ -243,4 +243,12 @@ footer {
     flex: 1 1 100%;
     text-align: center;
   }
+  .intro-right {
+       order: -1;
+       /* Move image section above the text */
+  }
+  
+  .intro-left {
+       order: 1;
+  }
 }
