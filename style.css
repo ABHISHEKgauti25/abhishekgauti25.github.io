@@ -33,12 +33,6 @@ body {
   color: #000;
 }
 
-.theme-toggle {
-  background: transparent;
-  border: none;
-  font-size: 1.2rem;
-  cursor: pointer;
-}
 
 .container {
   max-width: 960px;
@@ -76,7 +70,7 @@ h1 {
   font-weight: 100;
 }
 h1 strong {
-  font-weight: 700;
+  font-weight: 600;
   /* Less bold than normal bold */
 }
 h2 {
@@ -122,3 +116,101 @@ footer {
 .dark .project a {
   color: #90caf9;
 }
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1em;
+}
+
+.contact-list li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-list img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  filter: grayscale(100%);
+}
+
+.contact-list a {
+  text-decoration: none;
+  color: #0366d6;
+}
+
+.dark .contact-list a {
+  color: #90caf9;
+}
+
+.email-contact {
+  display: flex;
+  align-items: center;
+  font-size: 0.95em;
+  margin-top: 0.5em;
+  color: #444;
+}
+
+.email-contact img {
+  margin-right: 8px;
+  filter: grayscale(100%);
+}
+
+.dark .email-contact {
+  color: #ccc;
+}
+
+.icon-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  list-style: none;
+  padding: 0;
+  margin-top: 2em;
+}
+
+.icon-links li img {
+  width: 32px;
+  height: 32px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.icon-links li img:hover {
+  filter: none;
+}
+
+.svg-icon {
+  width: 32px;
+  height: 32px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  fill: currentColor;
+}
+
+.svg-icon:hover {
+  filter: none;
+}
+
+.theme-toggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.theme-toggle img {
+  width: 18px;
+  height: 18px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.theme-toggle img:hover {
+  filter: none;
+}
+
