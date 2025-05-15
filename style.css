@@ -250,36 +250,70 @@ footer {
 }
 
 
+.sticky-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #f5f5f5;
+  border-top: 0px solid #ccc;
+  text-align: center;
+  padding: 0em 0;
+  font-size: 0.5em;
+  color: #555;
+  z-index: 999;
+}
 
-
+.dark .sticky-footer {
+  background: #1e1e1e;
+  border-top: 0px solid #444;
+  color: #ccc;
+}
 #honors {
   margin-top: 3em;
 }
 
-.honors-list {
-  list-style: none;
-  padding: 0;
-  margin: 1em 0;
-}
-
-.honors-list li {
+.honor-entry {
+  display: flex;
+  gap: 1em;
   margin-bottom: 0em;
-  font-size: 1em;
-  line-height: 1.6;
+  align-items: flex-start;
 }
 
-.honors-list li strong {
-  display: inline-block;
-  width: 100px;
+.honor-date {
+  min-width: 110px;
+  font-weight: 600;
   color: #222;
 }
 
-.dark .honors-list li {
+.honor-text {
+  flex: 1;
+  color: #333;
+}
+
+.dark .honor-date {
   color: #ddd;
 }
 
-.dark .honors-list li strong {
-  color: #aaa;
+.dark .honor-text {
+  color: #ccc;
+}
+
+
+@media (max-width: 768px) {
+  .honor-entry {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .honor-date {
+    min-width: 100px;
+    text-align: left;
+  }
+
+  .honor-text {
+    text-align: left;
+  }
 }
 /* Mobile */
 @media (max-width: 768px) {
@@ -295,7 +329,7 @@ footer {
 
   .intro-right {
     flex: 1 1 100%;
-    text-align: center;
+    text-align: left;
   }
 
   .intro-right {
