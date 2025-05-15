@@ -10,21 +10,20 @@
 
 <body>
   <nav class="nav">
-    <div class="nav-left"></div>
-    <ul class="nav-right">
-      <li><a href="#about">about</a></li>
-      <li><a href="#projects">projects</a></li>
-      <li><a href="#contact">contact</a></li>
-      <li><a href="https://github.com/ABHISHEKgauti25" target="_blank">github</a></li>
-      <li><a href="https://www.linkedin.com/in/abhishek-gautam25/" target="_blank">linkedin</a></li>
-      <li><button id="theme-toggle" class="theme-toggle">☀️</button></li>
-    </ul>
-  </nav>
+  <div class="nav-left"></div>
+  <ul class="nav-right">
+    <li><a href="#about">about</a></li>
+    <li><a href="#projects">projects</a></li>
+    <li><a href="#contact">contact</a></li>
+    <li><a href="https://github.com/ABHISHEKgauti25" target="_blank">github</a></li>
+    <li><a href="https://www.linkedin.com/in/abhishek-gautam25/" target="_blank">linkedin</a></li>
+    <li><button id="theme-toggle" class="theme-toggle">☀️</button></li>
+  </ul>
+</nav>
 
 
   <main class="container">
     <section class="intro" id="about">
-      
       <div class="intro-text">
         <h1><strong>Abhishek</strong> Gautam</h1>
         <p>Incoming Associate Data Scientist at <a href = 'https://www.nobroker.in/'>NoBroker</a></p>
@@ -40,18 +39,39 @@
         <p>Always up to talk about ideas, film, and tech!</p>
       </div>
       <div class="intro-img">
-        <img src="profile.jpg" alt="Abhishek Gautam" class="float-img">
+        <img src="profile.jpg" alt="Abhishek Gautam">
       </div>
     </section>
 
     <section id="projects">
       <h2>Projects</h2>
-      <ul>
-        <li>Project 1 – Chat with PDF using AWS Bedrock + Claude</li>
-        <li>Project 2 – AI Audio Story Generator using Python & Node.js</li>
-        <li>Project 3 – Spring Boot + Mongo Admin Dashboard</li>
-      </ul>
+    
+      <div class="project">
+        <h3>ReviewRush</h3>
+        <p>
+          ReviewRush utilizes <strong>Gemini LLM</strong> and open-source vector indexing frameworks to answer questions
+          over PDF-based knowledge bases. It leverages the <strong>Retrieval-Augmented Generation (RAG)</strong> technique
+          to generate accurate and context-aware responses.
+        </p>
+        <p>
+          <a href="https://rushreview.streamlit.app/" target="_blank">🌐 Live App</a> |
+          <a href="https://github.com/ABHISHEKgauti25/ReviewRush" target="_blank">🔗 GitHub</a>
+        </p>
+      </div>
+    
+      <div class="project">
+        <h3>ImageCaptionGenerator</h3>
+        <p>
+          A web app that generates descriptive captions for images using deep learning. It combines a CNN encoder with an
+          LSTM-based decoder to generate natural language descriptions based on visual features.
+        </p>
+        <p>
+          <a href="https://imagecaptiongeneration.streamlit.app/" target="_blank">🌐 Live App</a> |
+          <a href="https://github.com/ABHISHEKgauti25/ImageCaptionGenerator" target="_blank">🔗 GitHub</a>
+        </p>
+      </div>
     </section>
+
 
     <section id="contact">
       <h2>Contact</h2>
