@@ -1,54 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abhishek Gautam | Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header>
-    <div class="container">
-      <img src="profile.jpg" alt="Abhishek Gautam" class="profile-img">
-      <h1>Abhishek Gautam</h1>
-      <p>Final-year B.Tech student | Backend & AI Enthusiast</p>
-      <div class="links">
-        <a href="https://github.com/ABHISHEKgauti25" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/abhishek-gautam25/" target="_blank">LinkedIn</a>
-      </div>
-      <label class="switch">
-        <input type="checkbox" id="theme-toggle">
-        <span class="slider round"></span>
-      </label>
-    </div>
-  </header>
-
-  <section class="about container">
-    <h2>About Me</h2>
-    <p>I’m a final-year student at IIT Guwahati passionate about building intelligent backend systems that solve real-world problems. My interests lie at the intersection of backend engineering and applied AI.</p>
-  </section>
-
-  <section class="projects container">
-    <h2>Projects</h2>
-    <ul>
-      <li>GitHub Portfolio Projects auto-linked below</li>
+  <nav class="nav">
+    <div class="nav-left"></div>
+    <ul class="nav-right">
+      <li><a href="#about">about</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#contact">contact</a></li>
+      <li><a href="https://github.com/ABHISHEKgauti25" target="_blank">github</a></li>
+      <li><a href="https://www.linkedin.com/in/abhishek-gautam25/" target="_blank">linkedin</a></li>
+      <li><button id="theme-toggle" class="theme-toggle">☀️</button></li>
     </ul>
-  </section>
+  </nav>
 
-  <section class="contact container">
-    <h2>Contact</h2>
-    <p>Let's connect! I'm open to opportunities and collaborations.</p>
-  </section>
 
-  <footer class="container">
+  <main class="container">
+    <section class="intro" id="about">
+      
+      <div class="intro-text">
+        <h1><strong>Abhishek</strong> Gautam</h1>
+        <p>Incoming Associate Data Scientist at <a href = 'https://www.nobroker.in/'>NoBroker</a></p>
+        <p>Hello! I'm a recent graduate from <a href = 'https://iitg.ac.in/'>Indian Institute of Technology Guwahati</a>, where I earned my B.Tech in Engineering Physics with a
+        minor in Product Design.</p>
+        <p>
+        I'm passionate about Machine Learning and Deep Learning, and over the years, I’ve worked on multiple projects that
+        explore how intelligent systems can solve real-world problems at scale.</p>
+        <p>Outside of code and models, I love crafting stories through visuals — from color grading to editing short films. I’ve
+        been part of three Inter-IIT film teams, which taught me the power of visual
+        storytelling, collaboration, and aesthetics.</p>
+        <p>I’m also a sports enthusiast, actively pursuing archery and volleyball.</p>
+        <p>Always up to talk about ideas, film, and tech!</p>
+      </div>
+      <div class="intro-img">
+        <img src="profile.jpg" alt="Abhishek Gautam" class="float-img">
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>Project 1 – Chat with PDF using AWS Bedrock + Claude</li>
+        <li>Project 2 – AI Audio Story Generator using Python & Node.js</li>
+        <li>Project 3 – Spring Boot + Mongo Admin Dashboard</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Feel free to connect on LinkedIn or drop a message via GitHub!</p>
+    </section>
+  </main>
+
+  <footer>
     <p>&copy; 2025 Abhishek Gautam</p>
   </footer>
 
   <script>
-    const toggle = document.getElementById('theme-toggle');
-    toggle.addEventListener('change', () => {
-      document.body.classList.toggle('dark-mode');
+    const toggleBtn = document.getElementById('theme-toggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      toggleBtn.textContent = document.body.classList.contains('dark') ? '🌙' : '☀️';
     });
   </script>
 </body>
+
 </html>
