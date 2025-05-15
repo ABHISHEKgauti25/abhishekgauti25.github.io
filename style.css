@@ -27,6 +27,9 @@ body {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
 .nav a {
   text-decoration: none;
   color: #444;
@@ -85,6 +88,9 @@ footer {
 .project h3 {
   margin-bottom: 0.3em;
   color: #222;
+}
+.dark .project h3 {
+  color: #eee;
 }
 
 .project a {
@@ -178,12 +184,13 @@ footer {
 }
 
 .intro-heading {
-  margin-bottom: 2em;
+  margin-bottom: 0em;
 }
 
 .intro-heading h1 {
-  font-size: 2.4em;
+  font-size: 3em;
   font-weight: 100;
+  margin-bottom: 0em;
 }
 
 .intro-heading h1 strong {
@@ -223,6 +230,9 @@ footer {
   font-size: 0.95em;
   color: #444;
 }
+.dark .email-contact {
+  color: #eee;
+}
 
 .email-contact img {
   width: 16px;
@@ -230,7 +240,47 @@ footer {
   margin-right: 8px;
   filter: grayscale(100%);
 }
+.dark .email-contact img {
+  filter: brightness(0) invert(1);
+}
 
+.dark .icon-links img:not(.svg-icon),
+.dark .email-contact img {
+  filter: brightness(0) invert(1);
+}
+
+
+
+
+#honors {
+  margin-top: 3em;
+}
+
+.honors-list {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0;
+}
+
+.honors-list li {
+  margin-bottom: 0em;
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.honors-list li strong {
+  display: inline-block;
+  width: 100px;
+  color: #222;
+}
+
+.dark .honors-list li {
+  color: #ddd;
+}
+
+.dark .honors-list li strong {
+  color: #aaa;
+}
 /* Mobile */
 @media (max-width: 768px) {
   .intro-content {
@@ -238,11 +288,16 @@ footer {
     align-items: center;
   }
 
-  .intro-left,
+  .intro-left{
+    flex: 1 1 100%;
+    text-align: left;
+  }
+
   .intro-right {
     flex: 1 1 100%;
     text-align: center;
   }
+
   .intro-right {
        order: -1;
        /* Move image section above the text */
