@@ -2,196 +2,125 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Abhishek Gautam | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <nav class="nav">
-    <div class="nav-left"></div>
     <ul class="nav-right">
       <li><a href="#about">about</a></li>
-      <li><a href="#projects">projects</a></li>
+      <li><a href="#work">work</a></li>
       <li><a href="#contact">contact</a></li>
       <li>
         <button id="theme-toggle" class="theme-toggle">
           <img id="theme-icon" src="https://img.icons8.com/ios-filled/24/000000/sun--v1.png" alt="Theme Icon" />
         </button>
       </li>
-
     </ul>
   </nav>
 
-
   <main class="container">
     <section class="intro" id="about">
-      <div class="intro-text">
+      <div class="intro-heading">
         <h1><strong>Abhishek</strong> Gautam</h1>
-        <p>Incoming Associate Data Scientist at <a href='https://www.nobroker.in/'>NoBroker</a></p>
-        <p>Hello! I'm a recent graduate from <a href='https://iitg.ac.in/'>Indian Institute of Technology Guwahati</a>,
-          where I earned my B.Tech in Engineering Physics with a
-          minor in Product Design.</p>
-        <p>
-          I'm passionate about Machine Learning and Deep Learning, and over the years, I’ve worked on multiple projects
-          that
-          explore how intelligent systems can solve real-world problems at scale.</p>
-        <p>Outside of code and models, I love crafting stories through visuals — from color grading to editing short
-          films. I’ve
-          been part of three Inter-IIT film teams, which taught me the power of visual
-          storytelling, collaboration, and aesthetics.</p>
-        <p>I’m also a sports enthusiast, actively pursuing archery and volleyball.</p>
-        <p>Always up to talk about ideas, film, and tech!</p>
+        <p>Incoming Associate Data Scientist at <a href="https://www.nobroker.in/">NoBroker</a></p>
       </div>
 
-      <div class="intro-img">
-        <img src="profile.jpg" alt="Abhishek Gautam">
+      <div class="intro-content">
+        <div class="intro-left">
+          <p>Hello! I'm a recent graduate from <a href='https://iitg.ac.in/'>Indian Institute of Technology
+              Guwahati</a>, where I earned my B.Tech in Engineering Physics with a minor in Product Design.</p>
+          <p>I'm passionate about Machine Learning and Deep Learning, and over the years, I’ve worked on multiple
+            projects that explore how intelligent systems can solve real-world problems at scale.</p>
+          <p>Outside of code and models, I love crafting stories through visuals — from color grading to editing short
+            films. I’ve been part of three Inter-IIT film teams, which taught me the power of visual storytelling,
+            collaboration, and aesthetics.</p>
+          <p>I’m also a sports enthusiast, actively pursuing archery and volleyball.</p>
+          <p>Always up to talk about ideas, film, and tech!</p>
+        </div>
+        <div class="intro-right">
+          <img src="profile.jpg" alt="Abhishek Gautam" />
+          <p class="email-contact">
+            <img src="https://img.icons8.com/ios-filled/16/000000/new-post.png" alt="email icon" />
+            abhishek.gautam.iitg@gmail.com
+          </p>
+        </div>
+
       </div>
-      <p class="email-contact">
-        <img src="https://img.icons8.com/ios-filled/20/000000/new-post.png" alt="email icon">
-        abhishek.gautam.iitg@gmail.com
-      </p>
-
-
     </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
+    <section id="work">
+      <h2>Work</h2>
 
       <div class="project">
         <h3>Goldman Sachs India Hackathon 2024 – Quant (National Finalist)</h3>
-        <p>
-          Ranked in the <strong>Top 5 out of 7,000+</strong> participants in this nationwide hackathon, with the final
-          round
-          held in Bangalore.
-          Solved three problem statements: <em>Predict Closing Auction Volume</em>, <em>Manage Your Stock Entry</em>,
-          and
-          <em>Option Price Modeling</em>.
-        </p>
-        <p>
-          <a href="https://github.com/ABHISHEKgauti25/GoldmanSachsIndiaHackathon" target="_blank">🔗 GitHub</a>
-        </p>
+        <p>Top 5 out of 7,000+ participants. Final round in Bangalore. Solved: Predict Auction Volume, Stock Entry
+          Optimization, Option Pricing.</p>
+        <p><a href="https://github.com/ABHISHEKgauti25/GoldmanSachsIndiaHackathon" target="_blank">🔗 GitHub</a></p>
       </div>
 
       <div class="project">
         <h3>BNY–IITG Hackathon 2024 (Runner-Up)</h3>
-        <p>
-          Developed a smart financial fraud detection system that extracts data from bank statements, allows manual
-          verification, and flags anomalies using ML.
-          Built using <strong>Django</strong>, <strong>React</strong>, and <strong>MongoDB</strong>.
-        </p>
-        <p>
-          <a href="https://github.com/Haribhajank/BNY-Hackathon" target="_blank">🔗 GitHub</a>
-        </p>
+        <p>Fraud detection from bank statements using Django, React, MongoDB.</p>
+        <p><a href="https://github.com/Haribhajank/BNY-Hackathon" target="_blank">🔗 GitHub</a></p>
       </div>
 
       <div class="project">
         <h3>American Express Campus Challenge – Decision Science Track 2024</h3>
-        <p>
-          Built a predictive model to forecast T20 cricket match winners using advanced ML techniques. Applied extensive
-          feature engineering, model stacking, and hyperparameter tuning with <strong>XGBoost</strong>,
-          <strong>LightGBM</strong>, <strong>CatBoost</strong>, and more.
+        <p>Predicted T20 match winners using XGBoost, LightGBM, CatBoost with advanced feature engineering and tuning.
         </p>
-        <p>
-          <a href="https://www.kaggle.com/datasets/abhishekgautam12/american-express-campus-super-bowl-challenge-2024?select=664376cd0ff2c_amex_campus_challenge_2024_modeling_problem_statement_vf_1.pdf"
-            target="_blank">🔗 Kaggle</a>
-        </p>
+        <p><a href="https://www.kaggle.com/datasets/abhishekgautam12/american-express-campus-super-bowl-challenge-2024"
+            target="_blank">🔗 Kaggle</a></p>
       </div>
 
       <div class="project">
         <h3>JLR–Innovate48 Hackathon 2023</h3>
-        <p>
-          Built a machine learning solution for <strong>anomaly detection in wheel rotation time-series data</strong>.
-          The
-          goal was to identify hidden faults in automotive sensor data using advanced preprocessing and ML techniques.
-        </p>
-        <p>
-          <a href="https://www.kaggle.com/code/abhishekgautam12/jlr-ps3" target="_blank">🔗 Kaggle</a>
-        </p>
+        <p>Anomaly detection in wheel rotation time-series sensor data using ML.</p>
+        <p><a href="https://www.kaggle.com/code/abhishekgautam12/jlr-ps3" target="_blank">🔗 Kaggle</a></p>
       </div>
-
-
 
       <div class="project">
         <h3>Review Rush</h3>
-        <p>
-          ReviewRush utilizes <strong>Gemini LLM</strong> and open-source vector indexing frameworks to answer questions
-          over PDF-based knowledge bases. It leverages the <strong>Retrieval-Augmented Generation (RAG)</strong>
-          technique
-          to generate accurate and context-aware responses.
-        </p>
-        <p>
-          <a href="https://rushreview.streamlit.app/" target="_blank">🌐 Live App</a> |
+        <p>PDF Q&A app using Gemini LLM and Retrieval-Augmented Generation.</p>
+        <p><a href="https://rushreview.streamlit.app/" target="_blank">🌐 Live App</a> |
           <a href="https://github.com/ABHISHEKgauti25/ReviewRush" target="_blank">🔗 GitHub</a>
         </p>
       </div>
 
       <div class="project">
         <h3>Image Caption Generator</h3>
-        <p>
-          A web app that generates descriptive captions for images using deep learning. It combines a CNN encoder with
-          an
-          LSTM-based decoder to generate natural language descriptions based on visual features.
-        </p>
-        <p>
-          <a href="https://imagecaptiongeneration.streamlit.app/" target="_blank">🌐 Live App</a> |
+        <p>Descriptive captions from images using CNN encoder and LSTM decoder.</p>
+        <p><a href="https://imagecaptiongeneration.streamlit.app/" target="_blank">🌐 Live App</a> |
           <a href="https://github.com/ABHISHEKgauti25/ImageCaptionGenerator" target="_blank">🔗 GitHub</a>
         </p>
       </div>
 
-
-
-
       <p>I'm also active on <a href="https://www.kaggle.com/abhishekgautam12" target="_blank">Kaggle</a>, where I
-        explore ML
-        challenges and share notebooks.</p>
-
+        explore ML challenges and share notebooks.</p>
     </section>
-
 
     <section id="contact">
       <ul class="icon-links">
-
-        <li>
-          <a href="https://www.quora.com/profile/Abhishek-Gautam-1459" target="_blank">
-            <img src="https://img.icons8.com/ios-filled/32/000000/quora.png" alt="Quora">
-          </a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/@abhishekgautam25" target="_blank">
-            <img src="https://img.icons8.com/ios-filled/32/000000/youtube-play.png" alt="YouTube">
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/abhishek-gautam25/" target="_blank">
-            <img src="https://img.icons8.com/ios-filled/32/000000/linkedin.png" alt="LinkedIn">
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/ABHISHEKgauti25" target="_blank">
-            <img src="https://img.icons8.com/ios-filled/32/000000/github.png" alt="GitHub">
-          </a>
-        </li>
-        <li>
-          <a href="https://www.kaggle.com/abhishekgautam12" target="_blank">
-            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/kaggle.svg" alt="Kaggle"
-              class="svg-icon">
-          </a>
-        </li>
-
-
-
+        <li><a href="https://www.quora.com/profile/Abhishek-Gautam-1459" target="_blank"><img
+              src="https://img.icons8.com/ios-filled/32/000000/quora.png" alt="Quora" /></a></li>
+        <li><a href="https://www.youtube.com/@abhishekgautam25" target="_blank"><img
+              src="https://img.icons8.com/ios-filled/32/000000/youtube-play.png" alt="YouTube" /></a></li>
+        <li><a href="https://www.linkedin.com/in/abhishek-gautam25/" target="_blank"><img
+              src="https://img.icons8.com/ios-filled/32/000000/linkedin.png" alt="LinkedIn" /></a></li>
+        <li><a href="https://github.com/ABHISHEKgauti25" target="_blank"><img
+              src="https://img.icons8.com/ios-filled/32/000000/github.png" alt="GitHub" /></a></li>
+        <li><a href="https://www.kaggle.com/abhishekgautam12" target="_blank"><img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/kaggle.svg" alt="Kaggle"
+              class="svg-icon" /></a></li>
       </ul>
-
-
     </section>
-
-
   </main>
 
   <footer>
-    <p>&copy; 2025 Abhishek Gautam</p>
+    <p>&copy; 2025 Abhishek Gautam. Last updated: May 16, 2025.</p>
   </footer>
 
   <script>
@@ -199,11 +128,9 @@
     const icon = document.getElementById('theme-icon');
 
     function updateThemeIcon() {
-      if (document.body.classList.contains('dark')) {
-        icon.src = "https://img.icons8.com/ios-filled/24/ffffff/crescent-moon.png"; // white moon
-      } else {
-        icon.src = "https://img.icons8.com/ios-filled/24/000000/sun--v1.png"; // black sun
-      }
+      icon.src = document.body.classList.contains('dark')
+        ? "https://img.icons8.com/ios-filled/24/ffffff/crescent-moon.png"
+        : "https://img.icons8.com/ios-filled/24/000000/sun--v1.png";
     }
 
     toggleBtn.addEventListener('click', () => {
@@ -211,11 +138,8 @@
       updateThemeIcon();
     });
 
-    // Call on load in case theme persists (optional)
     updateThemeIcon();
   </script>
-
-
 </body>
 
 </html>
