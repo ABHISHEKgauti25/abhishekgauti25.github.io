@@ -4,33 +4,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abhishek Gautam | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Abhishek Gautam</title>
+  <link rel="stylesheet" href="style.css?v=4" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <nav class="nav">
+    <div class="nav-left">
+      <a href="index.html" class="logo" style="visibility: hidden;">Abhishek Gautam</a>
+    </div>
     <ul class="nav-right">
-      <li><a href="#about">about</a></li>
-      <li><a href="#work">work</a></li>
-      <li><a href="#contact">contact</a></li>
-      <li>
-        <button id="theme-toggle" class="theme-toggle">
-          <img id="theme-icon" src="https://img.icons8.com/ios-filled/24/000000/sun--v1.png" alt="Theme Icon" />
-        </button>
-      </li>
+      <li><a href="index.html" class="active">About</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="project-west.html">Project West</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
-  <main class="container">
-    <section class="intro" id="about">
-      <div class="intro-heading">
-        <h1><strong>Abhishek</strong> Gautam</h1>
-        <p>Associate Data Scientist at <a href="https://www.nobroker.in/">NoBroker</a></p>
-      </div>
+  <main class="container centered-layout">
+    <section class="intro">
+      <div class="intro-text">
+        <h1>Abhishek Gautam</h1>
+        <p class="role">Associate Data Scientist at <a href="https://www.nobroker.in/">NoBroker</a></p>
 
-      <div class="intro-content">
-        <div class="intro-left">
+        <div class="intro-image-wrapper">
+          <img src="profile.jpg" alt="Abhishek Gautam" class="profile-img" />
+        </div>
+
+        <div class="bio">
           <p>Hello! I'm a recent graduate from <a href='https://iitg.ac.in/'>Indian Institute of Technology
               Guwahati</a>, where I earned my B.Tech in Engineering Physics with a minor in Product Design.</p>
           <p>I'm passionate about Machine Learning and Deep Learning, and over the years, I’ve worked on multiple
@@ -41,151 +45,94 @@
           <p>I’m also a sports enthusiast, actively pursuing archery and volleyball.</p>
           <p>Always up to talk about ideas, film, and tech!</p>
         </div>
-        <div class="intro-right">
-          <img src="profile.jpg" alt="Abhishek Gautam" />
-          <p class="email-contact">
-            <img src="https://img.icons8.com/ios-filled/16/000000/new-post.png" alt="email icon" />
-            abhishek.gautam.iitg@gmail.com
-          </p>
+      </div>
+    </section>
+
+    <section id="achievements" class="section-block">
+      <h2>Achievements</h2>
+
+      <div class="achievement-list">
+        <div class="achievement-item">
+          <div class="achievement-date">Jul 2025</div>
+          <div class="achievement-content">
+            <div class="achievement-title">Dr. Shankar Dayal Sharma Gold Medal</div>
+            <div class="achievement-subtitle">IIT Guwahati</div>
+          </div>
         </div>
 
+        <div class="achievement-item">
+          <div class="achievement-date">Dec 2024</div>
+          <div class="achievement-content">
+            <div class="achievement-title">Gold Medal, Inter-IIT Cultural Meet 7.0</div>
+            <div class="achievement-subtitle">IIT Patna</div>
+          </div>
+        </div>
+
+        <div class="achievement-item">
+          <div class="achievement-date">Nov 2024</div>
+          <div class="achievement-content">
+            <div class="achievement-title">Runner-Up</div>
+            <div class="achievement-subtitle">BNY–IITG Hackathon</div>
+          </div>
+        </div>
+
+        <div class="achievement-item">
+          <div class="achievement-date">Apr 2024</div>
+          <div class="achievement-content">
+            <div class="achievement-title">Best Institute Secretary</div>
+            <div class="achievement-subtitle">Cultural Board, IIT Guwahati</div>
+          </div>
+        </div>
+
+        <div class="achievement-item">
+          <div class="achievement-date">Dec 2023</div>
+          <div class="achievement-content">
+            <div class="achievement-title">Gold Medal, Inter-IIT Cultural Meet 6.0</div>
+            <div class="achievement-subtitle">IIT Kharagpur</div>
+          </div>
+        </div>
+
+        <div class="achievement-item">
+          <div class="achievement-date">Sept 2023</div>
+          <div class="achievement-content">
+            <div class="achievement-title">Runner-Up</div>
+            <div class="achievement-subtitle">JLR–Innovate48 Hackathon</div>
+          </div>
+        </div>
+
+        <div class="achievement-item">
+          <div class="achievement-date">Jan 2023</div>
+          <div class="achievement-content">
+            <div class="achievement-title">Silver Medal, Inter-IIT Cultural Meet 5.0</div>
+            <div class="achievement-subtitle">IIT Madras</div>
+          </div>
+        </div>
+
+        <div class="achievement-item">
+          <div class="achievement-date">Feb 2019</div>
+          <div class="achievement-content">
+            <div class="achievement-title">Dr. B.R. Ambedkar National Dignity Award</div>
+            <!-- No subtitle for this one, or leave empty div? No, just omit if not needed, or put something? Title seems complete. -->
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="work">
-      <h2>Work</h2>
-
-      <div class="project">
-        <h3>Goldman Sachs India Hackathon 2024 – Quant (National Finalist)</h3>
-        <p>Predict Auction Volume, Stock Entry Optimization, Option Pricing.</p>
-        <p><a href="https://github.com/ABHISHEKgauti25/GoldmanSachsIndiaHackathon" target="_blank">🔗 GitHub</a></p>
+    <section id="contact" class="section-block">
+      <h2>Get in Touch</h2>
+      <div class="contact-links">
+        <a href="mailto:abhishek.gautam.iitg@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/abhishek-gautam25/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/ABHISHEKgauti25" target="_blank">GitHub</a>
+        <a href="https://www.kaggle.com/abhishekgautam12" target="_blank">Kaggle</a>
+        <a href="https://www.youtube.com/@abhishekgautam25" target="_blank">YouTube</a>
       </div>
-
-      <div class="project">
-        <h3>BNY–IITG Hackathon 2024 (Runner-Up)</h3>
-        <p>Fraud and Defaulter detection from bank statements and credit history.</p>
-        <p><a href="https://github.com/Haribhajank/BNY-Hackathon" target="_blank">🔗 GitHub</a></p>
-      </div>
-
-      <div class="project">
-        <h3>American Express Campus Challenge – Decision Science Track 2024</h3>
-        <p>Predicted T20 match winners using XGBoost, LightGBM, CatBoost with advanced feature engineering.
-        </p>
-        <p><a href="https://www.kaggle.com/datasets/abhishekgautam12/american-express-campus-super-bowl-challenge-2024"
-            target="_blank">🔗 Kaggle</a></p>
-      </div>
-
-      <div class="project">
-        <h3>JLR–Innovate48 Hackathon 2023</h3>
-        <p>Anomaly detection in wheel rotation time-series sensor data using ML.</p>
-        <p><a href="https://www.kaggle.com/code/abhishekgautam12/jlr-ps3" target="_blank">🔗 Kaggle</a></p>
-      </div>
-
-      <div class="project">
-        <h3>Review Rush</h3>
-        <p>PDF Q&A app using Gemini LLM and Retrieval-Augmented Generation.</p>
-        <p><a href="https://rushreview.streamlit.app/" target="_blank">🌐 Live App</a> |
-          <a href="https://github.com/ABHISHEKgauti25/ReviewRush" target="_blank">🔗 GitHub</a>
-        </p>
-      </div>
-
-      <div class="project">
-        <h3>Image Caption Generator</h3>
-        <p>Descriptive captions from images using CNN encoder and LSTM decoder.</p>
-        <p><a href="https://imagecaptiongeneration.streamlit.app/" target="_blank">🌐 Live App</a> |
-          <a href="https://github.com/ABHISHEKgauti25/ImageCaptionGenerator" target="_blank">🔗 GitHub</a>
-        </p>
-      </div>
-
-      <p>I'm also active on <a href="https://www.kaggle.com/abhishekgautam12" target="_blank">Kaggle</a>, where I
-        explore ML challenges and share notebooks.</p>
-    </section>
-
-
-
-    <section id="honors">
-      <h2>Honors & Awards</h2>
-    
-      <div class="honor-entry">
-        <div class="honor-date"><strong>Dec 2024</strong></div>
-        <div class="honor-text">Gold Medal, Inter-IIT Cultural Meet 7.0, IIT Patna</div>
-      </div>
-    
-      <div class="honor-entry">
-        <div class="honor-date"><strong>Nov 2024</strong></div>
-        <div class="honor-text">Runner-Up, BNY–IITG Hackathon</div>
-      </div>
-    
-      <div class="honor-entry">
-        <div class="honor-date"><strong>Apr 2024</strong></div>
-        <div class="honor-text">Best Institute Secretary, Cultural Board, IIT Guwahati</div>
-      </div>
-    
-      <div class="honor-entry">
-        <div class="honor-date"><strong>Dec 2023</strong></div>
-        <div class="honor-text">Gold Medal, Inter-IIT Cultural Meet 6.0, IIT Kharagpur</div>
-      </div>
-    
-      <div class="honor-entry">
-        <div class="honor-date"><strong>Sept 2023</strong></div>
-        <div class="honor-text">Runner-Up, JLR–Innovate48 Hackathon</div>
-      </div>
-    
-      <div class="honor-entry">
-        <div class="honor-date"><strong>Jan 2023</strong></div>
-        <div class="honor-text">Silver Medal, Inter-IIT Cultural Meet 5.0, IIT Madras</div>
-      </div>
-    
-      <div class="honor-entry">
-        <div class="honor-date"><strong>Feb 2019</strong></div>
-        <div class="honor-text">Dr. B.R. Ambedkar National Dignity Award</div>
-      </div>
-    
-    </section>
-
-
-
-
-
-    <section id="contact">
-      <ul class="icon-links">
-        <li><a href="https://www.quora.com/profile/Abhishek-Gautam-1459" target="_blank"><img
-              src="https://img.icons8.com/ios-filled/32/000000/quora.png" alt="Quora" /></a></li>
-        <li><a href="https://www.youtube.com/@abhishekgautam25" target="_blank"><img
-              src="https://img.icons8.com/ios-filled/32/000000/youtube-play.png" alt="YouTube" /></a></li>
-        <li><a href="https://www.linkedin.com/in/abhishek-gautam25/" target="_blank"><img
-              src="https://img.icons8.com/ios-filled/32/000000/linkedin.png" alt="LinkedIn" /></a></li>
-        <li><a href="https://github.com/ABHISHEKgauti25" target="_blank"><img
-              src="https://img.icons8.com/ios-filled/32/000000/github.png" alt="GitHub" /></a></li>
-        <li><a href="https://www.kaggle.com/abhishekgautam12" target="_blank"><img
-              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/kaggle.svg" alt="Kaggle"
-              class="svg-icon" /></a></li>
-      </ul>
     </section>
   </main>
 
   <footer class="sticky-footer">
-    <p>&copy; 2025 Abhishek Gautam. Last updated: May 16, 2025.</p>
+    <p>Abhishek Gautam &copy; 2026 &middot; Last updated: Jan 24, 2026</p>
   </footer>
-
-
-  <script>
-    const toggleBtn = document.getElementById('theme-toggle');
-    const icon = document.getElementById('theme-icon');
-
-    function updateThemeIcon() {
-      icon.src = document.body.classList.contains('dark')
-        ? "https://img.icons8.com/ios-filled/24/ffffff/crescent-moon.png"
-        : "https://img.icons8.com/ios-filled/24/000000/sun--v1.png";
-    }
-
-    toggleBtn.addEventListener('click', () => {
-      document.body.classList.toggle('dark');
-      updateThemeIcon();
-    });
-
-    updateThemeIcon();
-  </script>
 </body>
 
 </html>
