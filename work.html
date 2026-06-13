@@ -4,103 +4,123 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Work | Abhishek Gautam</title>
-    <link rel="stylesheet" href="style.css?v=4" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Work &middot; Abhishek Gautam</title>
+    <link rel="stylesheet" href="style.css?v=6" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <nav class="nav">
-        <div class="nav-left">
-            <a href="index.html" class="logo">Abhishek Gautam</a>
-        </div>
-        <ul class="nav-right">
-            <li><a href="index.html">About</a></li>
-            <li><a href="work.html" class="active">Work</a></li>
-            <li><a href="project-west.html">Project West</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
+        <ul class="tabs">
+            <li><a href="index.html" class="tab">about</a></li>
+            <li><a href="work.html" class="tab is-active">work</a></li>
+            <li><a href="project-west.html" class="tab">project west</a></li>
+            <li><a href="index.html#contact" class="tab">contact</a></li>
         </ul>
     </nav>
 
-    <main class="container centered-layout">
+    <main class="wrap">
 
-        <div class="work-list">
-            <div class="project-item">
-                <div class="project-content">
-                    <h3>Goldman Sachs India Hackathon 2024 – Quant (National Finalist)</h3>
-                    <p>Predict Auction Volume, Stock Entry Optimization, Option Pricing.</p>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/ABHISHEKgauti25/GoldmanSachsIndiaHackathon" target="_blank"
-                        class="arrow-link">GitHub</a>
-                </div>
-            </div>
+        <!-- BUILDING ------------------------------------------------ -->
+        <section class="group">
+            <p class="eyebrow">Building</p>
+            <ul class="items">
+                <li class="item item--lead">
+                    <div class="item-main">
+                        <h3 class="item-title">jugnuu</h3>
+                        <p class="item-desc">A platform for people to meet, make plans, and travel and explore the world
+                            together.</p>
+                    </div>
+                    <a class="item-link" href="https://www.jugnuu.in" target="_blank" rel="noopener">jugnuu.in
+                        &#8599;</a>
+                </li>
+            </ul>
+        </section>
 
-            <div class="project-item">
-                <div class="project-content">
-                    <h3>BNY–IITG Hackathon 2024 (Runner-Up)</h3>
-                    <p>Fraud and Defaulter detection from bank statements and credit history.</p>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/Haribhajank/BNY-Hackathon" target="_blank" class="arrow-link">GitHub</a>
-                </div>
-            </div>
+        <!-- PROJECTS ------------------------------------------------ -->
+        <section class="group">
+            <p class="eyebrow">Projects</p>
+            <ul class="items">
+                <li class="item">
+                    <div class="item-main">
+                        <h3 class="item-title">Goldman Sachs India Hackathon 2024 &middot; Quant (National Finalist)
+                        </h3>
+                        <p class="item-desc">Auction-volume prediction, stock-entry optimization, and option pricing.
+                        </p>
+                    </div>
+                    <a class="item-link" href="https://github.com/ABHISHEKgauti25/GoldmanSachsIndiaHackathon"
+                        target="_blank" rel="noopener">GitHub &#8599;</a>
+                </li>
+                <li class="item">
+                    <div class="item-main">
+                        <h3 class="item-title">BNY&ndash;IITG Hackathon 2024 (Runner-Up)</h3>
+                        <p class="item-desc">Fraud and defaulter detection from bank statements and credit history.</p>
+                    </div>
+                    <a class="item-link" href="https://github.com/Haribhajank/BNY-Hackathon" target="_blank"
+                        rel="noopener">GitHub &#8599;</a>
+                </li>
+                <li class="item">
+                    <div class="item-main">
+                        <h3 class="item-title">American Express Campus Challenge 2024</h3>
+                        <p class="item-desc">Predicting T20 match winners with gradient-boosted models and engineered
+                            features.</p>
+                    </div>
+                    <a class="item-link"
+                        href="https://www.kaggle.com/datasets/abhishekgautam12/american-express-campus-super-bowl-challenge-2024"
+                        target="_blank" rel="noopener">Kaggle &#8599;</a>
+                </li>
+                <li class="item">
+                    <div class="item-main">
+                        <h3 class="item-title">JLR&ndash;Innovate48 Hackathon 2023</h3>
+                        <p class="item-desc">Anomaly detection on wheel-rotation sensor time-series data.</p>
+                    </div>
+                    <a class="item-link" href="https://www.kaggle.com/code/abhishekgautam12/jlr-ps3" target="_blank"
+                        rel="noopener">Kaggle &#8599;</a>
+                </li>
+                <li class="item">
+                    <div class="item-main">
+                        <h3 class="item-title">Review Rush</h3>
+                        <p class="item-desc">PDF question-answering with Gemini and retrieval-augmented generation.</p>
+                    </div>
+                    <a class="item-link" href="https://github.com/ABHISHEKgauti25/ReviewRush" target="_blank"
+                        rel="noopener">GitHub &#8599;</a>
+                </li>
+                <li class="item">
+                    <div class="item-main">
+                        <h3 class="item-title">Image Caption Generator</h3>
+                        <p class="item-desc">Image captioning with a CNN encoder and LSTM decoder.</p>
+                    </div>
+                    <a class="item-link" href="https://github.com/ABHISHEKgauti25/ImageCaptionGenerator" target="_blank"
+                        rel="noopener">GitHub &#8599;</a>
+                </li>
+            </ul>
+        </section>
 
-            <div class="project-item">
-                <div class="project-content">
-                    <h3>American Express Campus Challenge – Decision Science Track 2024</h3>
-                    <p>Predicted T20 match winners using XGBoost, LightGBM, CatBoost with feature engineering.
-                    </p>
-                </div>
-                <div class="project-links">
-                    <a href="https://www.kaggle.com/datasets/abhishekgautam12/american-express-campus-super-bowl-challenge-2024"
-                        target="_blank" class="arrow-link">Kaggle</a>
-                </div>
-            </div>
+        <!-- ===========================================================
+         TO ADD A NEW CATEGORY (Research / Models / Papers / Open Source)
+         copy this block, change the eyebrow label, and add <li> items:
 
-            <div class="project-item">
-                <div class="project-content">
-                    <h3>JLR–Innovate48 Hackathon 2023</h3>
-                    <p>Anomaly detection in wheel rotation time-series sensor data using ML.</p>
-                </div>
-                <div class="project-links">
-                    <a href="https://www.kaggle.com/code/abhishekgautam12/jlr-ps3" target="_blank" class="arrow-link">
-                        Kaggle</a>
-                </div>
-            </div>
+    <section class="group">
+      <p class="eyebrow">Research</p>
+      <ul class="items">
+        <li class="item">
+          <div class="item-main">
+            <h3 class="item-title">Title</h3>
+            <p class="item-desc">One-line description.</p>
+          </div>
+          <a class="item-link" href="#" target="_blank" rel="noopener">Link &#8599;</a>
+        </li>
+      </ul>
+    </section>
+    =========================================================== -->
 
-            <div class="project-item">
-                <div class="project-content">
-                    <h3>Review Rush</h3>
-                    <p>PDF Q&A app using Gemini LLM and Retrieval-Augmented Generation.</p>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/ABHISHEKgauti25/ReviewRush" target="_blank"
-                        class="arrow-link">GitHub</a>
-                </div>
-            </div>
-
-            <div class="project-item">
-                <div class="project-content">
-                    <h3>Image Caption Generator</h3>
-                    <p>Descriptive captions from images using CNN encoder and LSTM decoder.</p>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/ABHISHEKgauti25/ImageCaptionGenerator" target="_blank"
-                        class="arrow-link">GitHub</a>
-                </div>
-            </div>
-
-            <div class="kaggle-section text-center">
-                <p>I'm also active on <a href="https://www.kaggle.com/abhishekgautam12" target="_blank">Kaggle</a>,
-                    where I explore ML challenges and share notebooks.</p>
-            </div>
-        </div>
     </main>
 
-    <footer class="sticky-footer">
-        <p>Abhishek Gautam &copy; 2026 &middot; Last updated: Jan 24, 2026</p>
-    </footer>
+    <footer class="footer">Last updated &middot; Jun 13, 2026</footer>
 </body>
 
 </html>

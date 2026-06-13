@@ -5,134 +5,105 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Abhishek Gautam</title>
-  <link rel="stylesheet" href="style.css?v=4" />
+  <link rel="stylesheet" href="style.css?v=6" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
   <nav class="nav">
-    <div class="nav-left">
-      <a href="index.html" class="logo" style="visibility: hidden;">Abhishek Gautam</a>
-    </div>
-    <ul class="nav-right">
-      <li><a href="index.html" class="active">About</a></li>
-      <li><a href="work.html">Work</a></li>
-      <li><a href="project-west.html">Project West</a></li>
-      <li><a href="#contact">Contact</a></li>
+    <ul class="tabs">
+      <li><a href="index.html" class="tab is-active" data-tab="about">about</a></li>
+      <li><a href="work.html" class="tab">work</a></li>
+      <li><a href="project-west.html" class="tab">project west</a></li>
+      <li><a href="#contact" class="tab" data-tab="contact">contact</a></li>
     </ul>
   </nav>
 
-  <main class="container centered-layout">
-    <section class="intro">
-      <div class="intro-text">
-        <h1>Abhishek Gautam</h1>
-        <p class="role">Associate Data Scientist at <a href="https://www.nobroker.in/">NoBroker</a></p>
+  <main class="wrap">
+    <header class="hero">
+      <h1 class="name">Abhishek Gautam</h1>
+      <p class="tagline">learning machines</p>
+      <p class="bio">I prepare data, train models, and use them to make life easier. Off the
+        clock, I&rsquo;m usually out on the road somewhere, building stuff or using davinci resolve.</p>
+      <p class="resume"><a href="resume.pdf" target="_blank" rel="noopener">Resume</a></p>
+    </header>
 
-        <div class="intro-image-wrapper">
-          <img src="profile.jpg" alt="Abhishek Gautam" class="profile-img" />
-        </div>
-
-        <div class="bio">
-          <p>Hello! I'm a recent graduate from <a href='https://iitg.ac.in/'>Indian Institute of Technology
-              Guwahati</a>, where I earned my B.Tech in Engineering Physics with a minor in Product Design.</p>
-          <p>I'm passionate about Machine Learning and Deep Learning, and over the years, I’ve worked on multiple
-            projects that explore how intelligent systems can solve real-world problems at scale.</p>
-          <p>Outside of code and models, I love crafting stories through visuals — from color grading to editing short
-            films. I’ve been part of three Inter-IIT film teams, which taught me the power of visual storytelling,
-            collaboration, and aesthetics.</p>
-          <p>I’m also a sports enthusiast, actively pursuing archery and volleyball.</p>
-          <p>Always up to talk about ideas, film, and tech!</p>
-        </div>
+    <section class="facts">
+      <div class="fact">
+        <span class="fact-key">Currently</span>
+        <span class="fact-val">Associate Data Scientist at <a href="https://www.nobroker.in/" target="_blank"
+            rel="noopener">NoBroker</a></span>
+      </div>
+      <div class="fact">
+        <span class="fact-key">Education</span>
+        <span class="fact-val">Bachelor of Technology, Engineering Physics (minor product design) &middot; <a
+            href="https://iitg.ac.in/" target="_blank" rel="noopener">IIT Guwahati</a></span>
+      </div>
+      <div class="fact">
+        <span class="fact-key">Focus</span>
+        <span class="fact-val">STT, TTS, Turn detection, LLMs, RAG systems, Data Preparation Pipelines </span>
       </div>
     </section>
 
-    <section id="achievements" class="section-block">
-      <h2>Achievements</h2>
-
-      <div class="achievement-list">
-        <div class="achievement-item">
-          <div class="achievement-date">Jul 2025</div>
-          <div class="achievement-content">
-            <div class="achievement-title">Dr. Shankar Dayal Sharma Gold Medal</div>
-            <div class="achievement-subtitle">IIT Guwahati</div>
-          </div>
-        </div>
-
-        <div class="achievement-item">
-          <div class="achievement-date">Dec 2024</div>
-          <div class="achievement-content">
-            <div class="achievement-title">Gold Medal, Inter-IIT Cultural Meet 7.0</div>
-            <div class="achievement-subtitle">IIT Patna</div>
-          </div>
-        </div>
-
-        <div class="achievement-item">
-          <div class="achievement-date">Nov 2024</div>
-          <div class="achievement-content">
-            <div class="achievement-title">Runner-Up</div>
-            <div class="achievement-subtitle">BNY–IITG Hackathon</div>
-          </div>
-        </div>
-
-        <div class="achievement-item">
-          <div class="achievement-date">Apr 2024</div>
-          <div class="achievement-content">
-            <div class="achievement-title">Best Institute Secretary</div>
-            <div class="achievement-subtitle">Cultural Board, IIT Guwahati</div>
-          </div>
-        </div>
-
-        <div class="achievement-item">
-          <div class="achievement-date">Dec 2023</div>
-          <div class="achievement-content">
-            <div class="achievement-title">Gold Medal, Inter-IIT Cultural Meet 6.0</div>
-            <div class="achievement-subtitle">IIT Kharagpur</div>
-          </div>
-        </div>
-
-        <div class="achievement-item">
-          <div class="achievement-date">Sept 2023</div>
-          <div class="achievement-content">
-            <div class="achievement-title">Runner-Up</div>
-            <div class="achievement-subtitle">JLR–Innovate48 Hackathon</div>
-          </div>
-        </div>
-
-        <div class="achievement-item">
-          <div class="achievement-date">Jan 2023</div>
-          <div class="achievement-content">
-            <div class="achievement-title">Silver Medal, Inter-IIT Cultural Meet 5.0</div>
-            <div class="achievement-subtitle">IIT Madras</div>
-          </div>
-        </div>
-
-        <div class="achievement-item">
-          <div class="achievement-date">Feb 2019</div>
-          <div class="achievement-content">
-            <div class="achievement-title">Dr. B.R. Ambedkar National Dignity Award</div>
-            <!-- No subtitle for this one, or leave empty div? No, just omit if not needed, or put something? Title seems complete. -->
-          </div>
-        </div>
+    <section class="section" id="achievements">
+      <p class="eyebrow">Achievements</p>
+      <div class="awards">
+        <div class="award"><span class="award-name">Dr. Shankar Dayal Sharma Gold Medal</span><span
+            class="award-year">2025</span></div>
+        <div class="award"><span class="award-name">Gold Medal &middot; Inter-IIT Cultural Meet 7.0</span><span
+            class="award-year">2024</span></div>
+        <div class="award"><span class="award-name">Runner-Up &middot; BNY&ndash;IITG Hackathon</span><span
+            class="award-year">2024</span></div>
+        <div class="award"><span class="award-name">Best Institute Secretary &middot; Cultural Board, IITG</span><span
+            class="award-year">2024</span></div>
+        <div class="award"><span class="award-name">Gold Medal &middot; Inter-IIT Cultural Meet 6.0</span><span
+            class="award-year">2023</span></div>
+        <div class="award"><span class="award-name">Runner-Up &middot; JLR&ndash;Innovate48 Hackathon</span><span
+            class="award-year">2023</span></div>
+        <div class="award"><span class="award-name">Silver Medal &middot; Inter-IIT Cultural Meet 5.0</span><span
+            class="award-year">2023</span></div>
+        <div class="award"><span class="award-name">Dr. B.R. Ambedkar National Dignity Award</span><span
+            class="award-year">2019</span></div>
       </div>
     </section>
 
-    <section id="contact" class="section-block">
-      <h2>Get in Touch</h2>
-      <div class="contact-links">
-        <a href="mailto:abhishek.gautam.iitg@gmail.com">Email</a>
-        <a href="https://www.linkedin.com/in/abhishek-gautam25/" target="_blank">LinkedIn</a>
-        <a href="https://github.com/ABHISHEKgauti25" target="_blank">GitHub</a>
-        <a href="https://www.kaggle.com/abhishekgautam12" target="_blank">Kaggle</a>
-        <a href="https://www.youtube.com/@abhishekgautam25" target="_blank">YouTube</a>
+    <section class="section section--center" id="contact">
+      <p class="eyebrow">Contact</p>
+      <div class="links">
+        <a class="link" href="mailto:abhishek.gautam.iitg@gmail.com">Email</a>
+        <a class="link" href="https://www.linkedin.com/in/abhishek-gautam25/" target="_blank"
+          rel="noopener">LinkedIn</a>
+        <a class="link" href="https://github.com/ABHISHEKgauti25" target="_blank" rel="noopener">GitHub</a>
+        <a class="link" href="https://huggingface.co/abhishekgautamm" target="_blank" rel="noopener">Hugging Face</a>
+        <a class="link" href="https://www.kaggle.com/abhishekgautam12" target="_blank" rel="noopener">Kaggle</a>
+        <a class="link" href="https://www.youtube.com/@abhishekgautam25" target="_blank" rel="noopener">YouTube</a>
       </div>
     </section>
   </main>
 
-  <footer class="sticky-footer">
-    <p>Abhishek Gautam &copy; 2026 &middot; Last updated: Jan 24, 2026</p>
-  </footer>
+  <!-- Update this date whenever you push changes -->
+  <footer class="footer">Last updated &middot; Jun 13, 2026</footer>
+
+  <script>
+    // Slide the active tab between "about" and "contact" as the page scrolls.
+    (function () {
+      var about = document.querySelector('[data-tab="about"]');
+      var contact = document.querySelector('[data-tab="contact"]');
+      var target = document.getElementById('contact');
+      if (!about || !contact || !target || !('IntersectionObserver' in window)) return;
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { about.classList.remove('is-active'); contact.classList.add('is-active'); }
+          else { contact.classList.remove('is-active'); about.classList.add('is-active'); }
+        });
+      }, { threshold: 0.45 });
+      io.observe(target);
+    })();
+  </script>
 </body>
 
 </html>

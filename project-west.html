@@ -4,33 +4,105 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project West | Abhishek Gautam</title>
-    <link rel="stylesheet" href="style.css?v=4" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Project West &middot; Abhishek Gautam</title>
+    <link rel="stylesheet" href="style.css?v=7" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
+<body class="theme-west">
     <nav class="nav">
-        <div class="nav-left">
-            <a href="index.html" class="logo">Abhishek Gautam</a>
-        </div>
-        <ul class="nav-right">
-            <li><a href="index.html">About</a></li>
-            <li><a href="work.html">Work</a></li>
-            <li><a href="project-west.html" class="active">Project West</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
+        <ul class="tabs">
+            <li><a href="index.html" class="tab">about</a></li>
+            <li><a href="work.html" class="tab">work</a></li>
+            <li><a href="project-west.html" class="tab is-active">project west</a></li>
+            <li><a href="index.html#contact" class="tab">contact</a></li>
         </ul>
     </nav>
 
-    <main class="container full-height-center">
-        <div class="coming-soon">
-            <p>coming soon</p>
+    <main class="wrap wrap--wide">
+        <p class="eyebrow">Travel &middot; Western India</p>
+        <h1 class="west-title">Project West</h1>
+
+        <div class="west-hero">
+            <div class="west-intro">
+                <p>After graduation, the usual corporate routine didn&rsquo;t feel like enough. While I was training
+                    models and figuring out life in general, I kept coming back to the same pull &mdash; I like making
+                    things and building for people. So I started travelling, mostly through the western part of India,
+                    as raw as possible: local transport wherever I could, staying close to the ground to experience
+                    life, learn, and explore both the problems and the beauty of it.</p>
+                <a class="insta link" href="https://www.instagram.com/g_tony_g/" target="_blank" rel="noopener">stories
+                    from the road &rarr; @g_tony_g</a>
+            </div>
+        </div>
+
+        <!-- COLLAGE
+         Name each photo by its city and put it in /photos, e.g. jaipur.jpg
+         Then set that figure's <img src> to "photos/jaipur.jpg".
+         The city name is read from the filename and shown (in serif italic)
+         when you hover the photo. To override the label, add data-city="..."
+         on the <figure>. Tile sizes: big = 2x2, tall = 1x2, wide = 2x1. -->
+        <div class="collage">
+            <figure class="frame big"><span class="ph"></span><img src="photos/jodhpur.jpg" alt="" loading="lazy">
+                <figcaption></figcaption>
+            </figure>
+            <figure class="frame wide"><span class="ph"></span><img src="photos/banswara.jpg" alt="" loading="lazy">
+                <figcaption></figcaption>
+            </figure>
+            <figure class="frame tall"><span class="ph"></span><img src="photos/indrahar pass.jpg" alt="" loading="lazy">
+                <figcaption></figcaption>
+            </figure>
+            <figure class="frame tall"><span class="ph"></span><img src="photos/bikaner.jpg" alt="" loading="lazy">
+                <figcaption></figcaption>
+            </figure>
+            <figure class="frame wide"><span class="ph"></span><img src="photos/devprayag.jpg" alt="" loading="lazy">
+                <figcaption></figcaption>
+            </figure>
+            <figure class="frame"><span class="ph"></span><img src="photos/jaipur.JPG" alt="" loading="lazy">
+                <figcaption></figcaption>
+            </figure>
+            <figure class="frame"><span class="ph"></span><img src="photos/Triund.JPG" alt="" loading="lazy">
+                <figcaption></figcaption>
+            </figure>
+            <figure class="frame wide"><span class="ph"></span><img src="photos/jaisalmer.JPG" alt="" loading="lazy">
+                <figcaption></figcaption>
+            </figure>
         </div>
     </main>
 
-    <footer class="sticky-footer">
-        <p>Abhishek Gautam &copy; 2026 &middot; Last updated: Jan 24, 2026</p>
-    </footer>
+    <footer class="footer">Last updated &middot; Jun 13, 2026</footer>
+
+    <script>
+        // Read the city name from each photo's filename (or a data-city override),
+        // show it on hover, and fall back to a clean placeholder when the file is missing.
+        (function () {
+            function toCity(src) {
+                if (!src) return '';
+                var small = { of: 1, the: 1, and: 1, on: 1, in: 1, at: 1, by: 1, to: 1, da: 1, de: 1 };
+                var base = src.split('/').pop().split('?')[0].replace(/\.(jpe?g|png|webp|gif|avif)$/i, '');
+                return base.replace(/[-_]+/g, ' ').trim().split(/\s+/).map(function (w, i) {
+                    var lw = w.toLowerCase();
+                    if (i > 0 && small[lw]) return lw;
+                    return lw.charAt(0).toUpperCase() + lw.slice(1);
+                }).join(' ');
+            }
+            document.querySelectorAll('.collage .frame').forEach(function (f) {
+                var img = f.querySelector('img');
+                var cap = f.querySelector('figcaption');
+                var ph = f.querySelector('.ph');
+                var name = f.getAttribute('data-city') || toCity(img && img.getAttribute('src'));
+                if (cap) cap.textContent = name;
+                if (ph) ph.textContent = name;
+                if (!img) return;
+                if (img.complete && img.naturalWidth > 0) f.classList.add('has-image');
+                img.addEventListener('load', function () { f.classList.add('has-image'); f.classList.remove('is-empty'); });
+                img.addEventListener('error', function () { f.classList.add('is-empty'); f.classList.remove('has-image'); });
+            });
+        })();
+    </script>
 </body>
 
 </html>
